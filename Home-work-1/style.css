@@ -1,0 +1,35 @@
+body {
+  width: 78%;
+  height: auto;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-block-txt {
+  text-align: right;
+}
+.header-block-txt p {
+  color: gray;
+}
+.ListTraining li::marker {
+  color: rgb(13, 150, 218);
+}
+footer {
+}
+.NavList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.NavList li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.footerContiner {
+  display: flex;
+  justify-content: center;
+}
