@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form {
+  background: white;
+  width: 100%;
+  max-width: 460px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form-group-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-weight: 500;
+  padding: 10px 12px;
+}
+
+.block {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.checkbox-block {
+  cursor: pointer;
+  font-weight: normal;
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 25px 0 25px 44px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.checkbox {
+  position: absolute;
+  outline: none;
+  appearance: none;
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: -35px;
+  margin-top: -3px;
+  transition: background-color 0.3s;
+}
+
+.checkbox:checked::after {
+  background: url(../images/check-icon.svg) no-repeat center;
+  background-color: #0056b3;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.block:focus-visible {
+  outline: none;
+  border: 3px solid #0056b3;
+}
+
+.checkbox:focus-visible::after {
+  outline: none;
+  border: 3px solid #0056b3;
+}
+
+.button:focus-visible {
+  background-color: #0056b3;
+}
