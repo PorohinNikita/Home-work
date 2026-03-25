@@ -1,0 +1,158 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html {
+  font-family: Ubuntu, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 375px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+.container {
+
+  max-width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  border-radius: 3px;
+  outline: 1px solid #3596ed;
+  outline-offset: 5px;
+}
+
+summary:focus-visible {
+  border-radius: 3px;
+  outline: 1px solid #3596ed;
+
+}
+
+
+.decor::before {
+  position: absolute;
+  z-index: -1;
+  height: 48px;
+  width: calc(50% - 250px);
+  content: "";
+  background: url(../images/decor-large-icon.svg) repeat-x;
+}
+
+
+
+
+.title-large {
+  font-family: Oswald, sans-serif;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.title-medium {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  /* line-height: 28px; */
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.text {
+  font-family: Ubuntu;
+  /* max-width: 440px; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  word-wrap: break-word;
+  color: #535755;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+
+
+@media (width <=992px) {
+  .container {
+    max-width: 768px;
+  }
+
+}
+
+
+@media (width <=768px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .title-large {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .home-page .title-large {
+    text-align: center;
+    max-width: inherit;
+  }
+
+  .title-medium {
+    font-size: 20px;
+  }
+}
+
+
+@media (width <=576px) {
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .title-large {
+    font-size: 34px;
+  }
+
+  .title-medium {
+    font-size: 18px;
+  }
+
+
+}
